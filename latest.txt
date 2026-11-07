@@ -1,0 +1,3 @@
+version=1.2
+notes=First public release with the new look: frosted glass, Quick Settings, widgets, snap layouts and a Windows 11 style Task Manager.
+url=https://github.com/plutopower598/PlutomiumOS/releases/latest/download/Plutomium.iso
