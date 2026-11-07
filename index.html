@@ -13,17 +13,19 @@ h1{font-size:2.6rem;margin:0 0 8px}p.lead{color:var(--dim);font-size:1.15rem;mar
 small{color:var(--dim)}
 </style></head><body><main>
 <h1>PlutomiumOS</h1>
-<p class="lead">A hobby operating system built from scratch: its own kernel, desktop, apps and browser.</p>
+<p class="lead">An operating system built completely from scratch.</p>
 <a class="btn" href="https://github.com/plutopower598/PlutomiumOS/releases/latest/download/Plutomium.iso">Download the ISO</a>
 <p><small id="v">Latest version: checking…</small></p>
 <div class="card"><h2>What's inside</h2><ul>
 <li>Frosted-glass desktop, Quick Settings, notifications and widgets</li>
 <li>Snap layouts, movable desktop icons, any resolution your screen supports</li>
 <li>Pluto Store, Browser, Paint, Terminal, games and more</li>
-<li>Boots on BIOS and UEFI; runs live from the disc or installs to a drive</li></ul></div>
+<li>Boots on UEFI; runs live from the disc or installs to a drive</li></ul></div>
 <div class="card"><h2>Try it</h2><ul>
-<li>Create a new virtual machine (Other/Unknown, 512 MB RAM or more)</li>
+<li>Create a new virtual machine OR boot it on a real device (Use rufus to make it bootable)</li>
+<li>If its a VM, give it 1GB+ RAM, 4GB Storage, 128/256MB VRAM, 3 cores, enable UEFI and attach it the ISO as the optical drive on the IDE controller.<li><li>
 <li>Attach the ISO as the optical drive on the IDE controller and start the machine</li>
+<li>WARNING: IF UEFI ISNT ENABLED THERE WILL BE NO DISPLAY.<li>
 <li>Choose "Run without installing" or install to the virtual disk</li></ul></div>
 </main>
 <script>fetch('latest.txt').then(r=>r.text()).then(t=>{var m=/version=(.*)/.exec(t);document.getElementById('v').textContent=m?'Latest version: '+m[1]:'';}).catch(function(){document.getElementById('v').textContent='';});</script>
